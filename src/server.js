@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 
 app.get('/api/products', async (req, res) => {
-  await new Promise((resolve) => setTimeout(resolve, '3000')); // wait for 3 seconds to simulate a real API request and display the spinner
+  await new Promise((resolve) => setTimeout(resolve, '2000')); // wait for 2 seconds to simulate a real API request and display the spinner
   res.json(products);
 });
 
